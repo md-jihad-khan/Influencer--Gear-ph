@@ -1,0 +1,72 @@
+/* poppins google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --primary-color: #3a3a3a;
+}
+
+/* shared style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/* header styles */
+header {
+  width: 86%;
+  margin: auto;
+}
+/* nav  styles*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+nav .menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+nav .nav-title {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+nav ul li i {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* responsive style */
+
+@media screen and (max-width: 576px) {
+  nav .menu-icon {
+    display: inline-block;
+  }
+  nav ul li {
+    display: none;
+  }
+
+  nav ul li:last-child {
+    display: block;
+  }
+}
