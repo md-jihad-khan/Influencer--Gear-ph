@@ -23,7 +23,7 @@
 
 /* header styles */
 header {
-  width: 86%;
+  width: 85%;
   margin: auto;
 }
 /* nav  styles*/
@@ -100,7 +100,7 @@ nav ul li i {
 
 /* companys style */
 .company-container {
-  max-width: 78%;
+  max-width: 75%;
   margin: 100px auto;
 }
 .company-container hr {
@@ -126,7 +126,7 @@ nav ul li i {
 
 /* popular collection section */
 .popular {
-  max-width: 80%;
+  max-width: 74%;
   margin: 100px auto;
 }
 
@@ -173,6 +173,56 @@ nav ul li i {
   max-width: 60%;
   text-align: justify;
 }
+.see-more {
+  display: flex;
+  justify-content: end;
+  margin: 20px 0px;
+}
+.see-more a {
+  text-decoration: none;
+  color: rgba(224, 44, 109, 0.87);
+  font-weight: 700;
+}
+
+/* featured section style */
+.featured {
+  max-width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured-img {
+  max-width: 40%;
+}
+.featured-img img {
+  width: 100%;
+}
+
+.featured-content {
+  max-width: 56%;
+}
+.featured-title {
+  color: #0a0826;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.featured-description {
+  color: #6c6c6c;
+  text-align: justify;
+  max-width: 520px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.featured-btn {
+  color: #fff;
+  background: #e02c6d;
+  padding: 10px 30px;
+  border: none;
+  font-weight: 700;
+}
 /* responsive style */
 @media screen and (max-width: 576px) {
   nav .menu-icon {
@@ -186,10 +236,12 @@ nav ul li i {
     display: block;
   }
 
-  .banner {
+  .banner,
+  .featured {
     flex-direction: column-reverse;
     text-align: center;
   }
+
   .banner-content {
     width: 100%;
     margin-top: 20px;
@@ -205,7 +257,9 @@ nav ul li i {
   .company-container hr {
     display: none;
   }
-
+  .companys {
+    justify-content: center;
+  }
   .collection-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -214,16 +268,27 @@ nav ul li i {
   .popular {
     max-width: 90%;
   }
+  .featured-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .featured-img {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .banner {
+  .banner,
+  .featured {
     flex-direction: column-reverse;
     text-align: center;
   }
   .banner-content {
     width: 100%;
     margin-top: 20px;
+  }
+  .companys {
+    justify-content: center;
   }
   .company-container img {
     max-width: 100%;
@@ -233,5 +298,12 @@ nav ul li i {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+  .featured-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .featured-img {
+    max-width: 100%;
   }
 }
